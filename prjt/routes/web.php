@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[AuthController::class,'index']);
 Route::post('/addUser',[AuthController::class,'create'])->name('ajout');
+Route::get('/ajouterUser',[AuthController::class,show]);
